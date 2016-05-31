@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SepaWriter</id>
+    <version>$version$</version>
+    <title>SepaWriter</title>
+    <authors>Spain-Holiday.com, Calle Hunefalk</authors>
+    <owners>Calle Hunefalk</owners>
+    <licenseUrl>https://github.com/SpainHoliday/sepawriter/blob/master/apache-license-2.0.md</licenseUrl>
+    <projectUrl>https://github.com/SpainHoliday/sepawriter</projectUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/18654356?v=3&s=140</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SepaWriter follows the Sepa standard for bank transactions.</description>
+    <releaseNotes></releaseNotes>
+    <copyright></copyright>
+    <tags>sepa xml</tags>
+  </metadata>
+  <files>
+	<file src="SepaWriter\bin\$configuration$\SepaWriter.dll" target="lib\net40\" />
+  </files>
+</package>
