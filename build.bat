@@ -21,7 +21,7 @@ if not "%errorlevel%"=="0" goto failure
 
 REM Package
 mkdir Build
-call %nuget% pack "SepaWriter\SepaWriter.csproj" -symbols -o Build -p Configuration=%config% %version%
+call %nuget% pack "SepaWriter\SepaWriter.csproj" -symbols -verbosity detailed -o Build -p Configuration=%config% %version%
 if not "%errorlevel%"=="0" goto failure
 
 :success
