@@ -1,4 +1,4 @@
-﻿namespace Perrich.SepaWriter
+﻿namespace SpainHoliday.SepaWriter
 {
     /// <summary>
     /// Some Constants...

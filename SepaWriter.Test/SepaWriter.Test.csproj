@@ -8,8 +8,8 @@
     <ProjectGuid>{B635E867-410C-4DAA-B607-1881FF29D09E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Perrich.SepaWriter.Test</RootNamespace>
-    <AssemblyName>Perrich.SepaWriter.Test</AssemblyName>
+    <RootNamespace>SpainHoliday.SepaWriter.Test</RootNamespace>
+    <AssemblyName>SpainHoliday.SepaWriter.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

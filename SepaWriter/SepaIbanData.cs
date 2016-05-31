@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using Perrich.SepaWriter.Utils;
+using SpainHoliday.SepaWriter.Utils;
 
-namespace Perrich.SepaWriter
+namespace SpainHoliday.SepaWriter
 {
     /// <summary>
     /// Get Creditor or Debtor data (Name and BIC + IBAN)

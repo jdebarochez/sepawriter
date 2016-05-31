@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace Perrich.SepaWriter.Test
+namespace SpainHoliday.SepaWriter.Test
 {
     [TestFixture]
     public class SepaDebitTransferTransactionTest

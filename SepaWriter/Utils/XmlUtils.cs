@@ -1,6 +1,6 @@
 ﻿using System.Xml;
 
-namespace Perrich.SepaWriter.Utils
+namespace SpainHoliday.SepaWriter.Utils
 {
     /// <summary>
     ///     Some Utilities to manage XML

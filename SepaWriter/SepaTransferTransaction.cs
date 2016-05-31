@@ -1,7 +1,7 @@
 ﻿using System;
-using Perrich.SepaWriter.Utils;
+using SpainHoliday.SepaWriter.Utils;
 
-namespace Perrich.SepaWriter
+namespace SpainHoliday.SepaWriter
 {
     /// <summary>
     ///     Base of a SEPA Transfer Transaction

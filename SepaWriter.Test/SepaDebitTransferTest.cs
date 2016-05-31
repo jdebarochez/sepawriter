@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using NUnit.Framework;
-using Perrich.SepaWriter.Utils;
+using SpainHoliday.SepaWriter.Utils;
 
-namespace Perrich.SepaWriter.Test
+namespace SpainHoliday.SepaWriter.Test
 {
     [TestFixture]
     public class SepaDebitTransferTest

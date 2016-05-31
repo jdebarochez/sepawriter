@@ -1,4 +1,4 @@
-﻿namespace Perrich.SepaWriter
+﻿namespace SpainHoliday.SepaWriter
 {
     /// <summary>
     ///     Define a SEPA Credit Transfer Transaction

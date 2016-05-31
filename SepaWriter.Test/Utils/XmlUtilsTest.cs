@@ -1,9 +1,9 @@
 ﻿using System.Text;
 using System.Xml;
 using NUnit.Framework;
-using Perrich.SepaWriter.Utils;
+using SpainHoliday.SepaWriter.Utils;
 
-namespace Perrich.SepaWriter.Test.Utils
+namespace SpainHoliday.SepaWriter.Test.Utils
 {
     [TestFixture]
     public class XmlUtilsTest

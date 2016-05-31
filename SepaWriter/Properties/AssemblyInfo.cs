@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Perrich.SepaWriter")]
+[assembly: AssemblyTitle("SpainHoliday.SepaWriter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("PERRICHOT Florian")]
-[assembly: AssemblyProduct("Perrich.SepaWriter")]
+[assembly: AssemblyCompany("Spain-Holiday.com")]
+[assembly: AssemblyProduct("SpainHoliday.SepaWriter")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
