@@ -8,7 +8,7 @@
     <owners>Calle Hunefalk</owners>
     <licenseUrl>https://github.com/SpainHoliday/sepawriter/blob/master/apache-license-2.0.md</licenseUrl>
     <projectUrl>https://github.com/SpainHoliday/sepawriter</projectUrl>
-    <iconUrl>https://avatars0.githubusercontent.com/u/18654356?v=3&s=140</iconUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/18654356?s=140</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>SepaWriter follows the Sepa standard for bank transactions.</description>
     <releaseNotes></releaseNotes>
