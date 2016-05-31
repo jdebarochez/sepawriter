@@ -16,6 +16,6 @@
     <tags>sepa xml</tags>
   </metadata>
   <files>
-	<file src="SepaWriter\bin\$configuration$\SepaWriter.dll" target="lib\net40\" />
+	<file src="SepaWriter\SepaWriter\bin\$configuration$\SepaWriter.dll" target="lib\net40\" />
   </files>
 </package>
