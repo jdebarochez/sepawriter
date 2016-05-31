@@ -46,7 +46,6 @@
   <ItemGroup>
     <Compile Include="SepaDebitTransferTest.cs" />
     <Compile Include="SepaDebitTransferTransactionTest.cs" />
-    <Compile Include="SepaFileWriterTest.cs" />
     <Compile Include="SepaTransferTransactionTest.cs" />
     <Compile Include="SepaCreditTransferTransactionTest.cs" />
     <Compile Include="SepaCreditTransferTest.cs" />
