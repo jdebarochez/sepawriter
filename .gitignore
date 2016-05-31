@@ -12,3 +12,13 @@
 
 .sonar
 /TestResults
+*.dll
+
+_NCrunch_SepaWriter/*
+
+.vs/*
+
+packages/log4net.*/*
+packages/NUnit.*/*
+*.ncrunchsolution
+*.ncrunchproject
