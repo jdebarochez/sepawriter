@@ -12,7 +12,7 @@ if not "%PackageVersion%" == "" (
 set nunit="tools\nunit\nunit-console.exe"
 
 REM Build
-"%programfiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe" SepaWriter.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=Normal /nr:false
+"%programfiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe" SepaWriter.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 if not "%errorlevel%"=="0" goto failure
 
 REM Unit tests
@@ -21,6 +21,8 @@ if not "%errorlevel%"=="0" goto failure
 
 REM Package
 mkdir Build
+mkdir Build\lib
+mkdir Build\lib\net40
 call %nuget% pack "SepaWriter\SepaWriter.csproj" -symbols -verbosity detailed -o Build -p Configuration=%config% %version%
 if not "%errorlevel%"=="0" goto failure
 
