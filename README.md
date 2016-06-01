@@ -1,5 +1,6 @@
 SepaWriter
 ===
+[![sepawriter MyGet Build Status](https://www.myget.org/BuildSource/Badge/sepawriter?identifier=e1d53645-035c-47b4-bf78-48c34f912349)](https://www.myget.org/)
 
 Manage SEPA (Single Euro Payments Area) Credit and Debit Transfer for SEPA or international order.
 Only one PaymentInformation is managed but it can manage multiple transactions. 
