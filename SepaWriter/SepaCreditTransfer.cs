@@ -26,6 +26,21 @@ namespace SpainHoliday.SepaWriter
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="SepaCreditTransfer"/> class.
+        /// </summary>
+        /// <param name="debitorAccountCurrencyCode">The currency code.</param>
+        /// <exception cref="SepaRuleException">Currency has to be a valid 3 character code in ISO format.</exception>
+        public SepaCreditTransfer(string debitorAccountCurrencyCode)
+        {
+            if (string.IsNullOrWhiteSpace(debitorAccountCurrencyCode) || debitorAccountCurrencyCode.Length != 3)
+            {
+                throw new SepaRuleException("Currency has to be a valid 3 character code in ISO format.");
+            }
+            DebtorAccountCurrency = debitorAccountCurrencyCode.ToUpper();
+            schema = SepaSchema.Pain00100103;
+        }
+
+        /// <summary>
         ///     Debtor IBAN data
         /// </summary>
         /// <exception cref="SepaRuleException">If debtor to set is not valid.</exception>
@@ -41,7 +56,7 @@ namespace SpainHoliday.SepaWriter
         }
 
         /// <summary>
-        ///     Is Mandatory data are set ? In other case a SepaRuleException will be thrown
+        ///     Is Mandatory data set ? Otherwise a SepaRuleException will be thrown
         /// </summary>
         /// <exception cref="SepaRuleException">If mandatory data is missing.</exception>
         protected override void CheckMandatoryData()

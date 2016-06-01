@@ -32,6 +32,17 @@ namespace SpainHoliday.SepaWriter
             schema = SepaSchema.Pain00800102;
         }
 
+        public SepaDebitTransfer(string creditorAccountCurrencyCode)
+        {
+            if (string.IsNullOrWhiteSpace(creditorAccountCurrencyCode) || creditorAccountCurrencyCode.Length != 3)
+            {
+                throw new SepaRuleException("Currency has to be a valid 3 character code in ISO format.");
+            }
+            CreditorAccountCurrency = creditorAccountCurrencyCode.ToUpper();
+            LocalInstrumentCode = "CORE";
+            schema = SepaSchema.Pain00800102;
+        }
+
         /// <summary>
         ///     Creditor IBAN data
         /// </summary>

@@ -394,5 +394,37 @@ namespace SpainHoliday.SepaWriter.Test
             var transfert = new SepaDebitTransfer();
             Assert.AreEqual("CORE", transfert.LocalInstrumentCode);
         }
+
+        [Test]
+        public void ShouldNotAllowNullCurrencyString()
+        {
+            Assert.Throws<SepaRuleException>(() => new SepaDebitTransfer((string)null));
+        }
+
+        [Test]
+        public void ShouldNotAllowShortCurrencyString()
+        {
+            Assert.Throws<SepaRuleException>(() => new SepaDebitTransfer("DK"));
+        }
+
+        [Test]
+        public void ShouldNotAllowLongCurrencyString()
+        {
+            Assert.Throws<SepaRuleException>(() => new SepaDebitTransfer("EURO"));
+        }
+
+        [Test]
+        public void ShouldSetCurrency()
+        {
+            var transfer = new SepaDebitTransfer("DKK");
+            Assert.That(transfer.CreditorAccountCurrency, Is.EqualTo("DKK"));
+        }
+
+        [Test]
+        public void ShouldSetCurrencyCaseInsensitive()
+        {
+            var transfer = new SepaDebitTransfer("Dkk");
+            Assert.That(transfer.CreditorAccountCurrency, Is.EqualTo("DKK"));
+        }
     }
 }
